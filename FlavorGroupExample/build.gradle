@@ -1,0 +1,101 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.6.+'
+    }
+}
+apply plugin: 'android'
+
+repositories {
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "19.0.0"
+
+    flavorGroups "suit", "number"
+
+    defaultConfig {
+        minSdkVersion 7
+        targetSdkVersion 19
+    }
+
+    productFlavors {
+
+        //number flavours
+        ace {
+            flavorGroup "number"
+        }
+
+        two {
+            flavorGroup "number"
+        }
+
+        three {
+            flavorGroup "number"
+        }
+
+        four {
+            flavorGroup "number"
+        }
+
+        five {
+            flavorGroup "number"
+        }
+
+        six {
+            flavorGroup "number"
+        }
+
+        seven {
+            flavorGroup "number"
+        }
+
+        eight {
+            flavorGroup "number"
+        }
+
+        nine {
+            flavorGroup "number"
+        }
+
+        ten {
+            flavorGroup "number"
+        }
+
+        jack {
+            flavorGroup "number"
+        }
+
+        queen {
+            flavorGroup "number"
+        }
+
+        king {
+            flavorGroup "number"
+        }
+
+        clubs {
+            flavorGroup "suit"
+        }
+
+        spades {
+            flavorGroup "suit"
+        }
+
+        diamonds {
+            flavorGroup "suit"
+        }
+
+        hearts {
+            flavorGroup "suit"
+        }
+    }
+}
+
+dependencies {
+	compile 'com.android.support:appcompat-v7:+'
+}
